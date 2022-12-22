@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>tp3.2</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+
+       
+
+        <div id="table_container">
+
+            <div id="form_container">
+                <div class="form_group">
+                    <label class="form_label">Nom: </label>
+                    <input type="text" id="form_nom" class="form_field">
+                </div>
+                <div class="form_group">
+                    <label class="form_label">Prenom: </label>
+                    <input type="text" id="form_prenom" class="form_field">
+                </div>
+                <div class="form_group">
+                    <label class="form_label">Points: </label>
+                    <input type="text" id="form_points" class="form_field">
+                </div>
+                <button class="btn-add" onclick="doNewData()">
+                    Ajouter
+                </button>
+            </div>
+
+            
+            <table >
+                <tr>
+                    <th>N</th>
+                    <th>Nom</th>
+                    <th>Prenom</th>
+                    <th>Points</th>
+                    <th>Select</th>
+                </tr>
+
+            </table>
+
+            <div id="container_summary">
+                <p id="p1">0 Ligne(s)</p>
+                <p id="p2"></p>
+                <p id="p3">Totale point(s) = 0</p>
+            </div>
+
+            <div class="container_btn">
+                <button class="btn-console" onclick="ConsoleTableau()">Console Tableau</button>
+                <button onclick="deleteRow()" class="btn-del">Supprimer</button>
+            </div>
+
+
+        </div>
+
+
+        <script src="script.js" ></script>
+    </body>
+</html>
